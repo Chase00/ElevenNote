@@ -2,7 +2,6 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-image: url(/Content/note.jpg); /* Background notes image*/
-    background-repeat: no-repeat;
     background-size: 100%;
 }
 
@@ -46,7 +45,7 @@ textarea {
 }
 
 .btn-primary{
-    background-color: #db9c74;
+    background-color: #db9c74; /* Button stuff */
     border-color: #db9c74;
 }
 
