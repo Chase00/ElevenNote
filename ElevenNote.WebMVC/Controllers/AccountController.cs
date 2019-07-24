@@ -10,9 +10,15 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ElevenNote.WebMVC.Models;
 using ElevenNote.Data;
+using ElevenNote.WebMVC;
 
-namespace ElevenNote.WebMVC.Controllers
+namespace ElevenNote.Web.Controllers
 {
+
+#if !DEBUG
+     [RequireHttps]
+
+#endif
     [Authorize]
     public class AccountController : Controller
     {
